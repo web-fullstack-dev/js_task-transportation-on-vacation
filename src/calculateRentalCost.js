@@ -34,13 +34,15 @@ function calculateRentalCost(days) {
     return 0;
   }
 
-  const dailyRate = 40;
-  let total = days * dailyRate;
+  const DAILY_RATE = 40;
+  const DISCOUNT_3_DAYS = 20;
+  const DISCOUNT_7_DAYS = 50;
+  const total = days * DAILY_RATE;
 
   if (days >= 7) {
-    total -= 50;
+    return total - DISCOUNT_7_DAYS;
   } else if (days >= 3) {
-    total -= 20;
+    return total - DISCOUNT_3_DAYS;
   }
 
   return total;
