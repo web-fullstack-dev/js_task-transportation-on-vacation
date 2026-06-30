@@ -28,7 +28,7 @@
  */
 
 function calculateRentalCost(days) {
-  // write code here ..
+  // write code here ...
 }
 
 module.exports = calculateRentalCost;
